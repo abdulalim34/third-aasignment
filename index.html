@@ -7,7 +7,11 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 <script src="https://kit.fontawesome.com/470efbc69f.js" crossorigin="anonymous"></script>
-    <title>Third Assignment</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+<title>Third Assignment</title>
 
 </head>
 <!-- navbar -->
@@ -26,12 +30,12 @@
           <img src="./images/logo.png" alt="">
           <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">Fruits Burst</span>
         </a>
-        <a href="" class="inline-flex items-center lg:mx-auto"><div id="myOverlay" class="overlay">
+        <a href="" class="inline-flex items-center lg:mx-auto"><div id="myOverlay rounded-full" class="overlay rounded-full">
             <!-- <span class="closebtn" onclick="closeSearch()" title="Close Overlay">x</span> -->
             <div class="overlay-content">
               <!-- <form action="action_page.php"> -->
                 <input type="text" placeholder="Search here." name="search">
-                <button class="rounded-full" type="submit"></button>
+                <button type="submit"></button>
               </form>
             </div>
           </div></a>
@@ -74,7 +78,59 @@
       </div>
     </div>
   </div>
+  <div class="hero min-h-screen" style="background-image: url(./images/banner1.png);">
+    <div class="hero-overlay bg-opacity-60"></div>
+    <div class="hero-content text-center text-neutral-content">
+      <div class="max-w-md">
+        <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your doorstep</h1>
+        <p class="mb-5 text-base">We supply highly quality organic products</p>
+        <button class="btn bg-[#F85559] border-none">Get Started</button>
+      </div>
+    </div>
+  </div>
 <body>
-    
+  <!-- banner section -->
+<section class="-mt-16  grid hidden md:inline-grid rounded-xl items-center justify-center grid-flow-col gap-x-16 w-4/5 bg-white ml-32 ">
+  <div><img src="./images/fruit1.png" alt=""><p>Black Grapes</p></div>
+  <div><img src="./images/fruit2.png" alt=""><p>Orange</p></div>
+  <div><img src="./images/fruit3.png" alt=""><p>Mango</p></div>
+  <div><img src="./images/fruit4.png" alt=""><p>Strawberry</p></div>
+  <div><img src="./images/fruit5.png" alt="">Pomegranate<p></p></div>
+
+</section>
+<!-- Banner section ends -->
+<!-- Deal of The day start Here -->
+<div class="flex flex-col md:flex-row m-10 items-center mt-16 ">
+  <div class="flex-1 ">
+    <h2 class=" text-4xl font-extrabold">Deal of the day</h2>
+    <p class="text-base">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+  </div>
+  <div class="grid grid-flow-col gap-5 items-center justify-center text-center auto-cols-max flex-1 ">
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:15;"></span>
+      </span>
+      days
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:10;"></span>
+      </span>
+      hours
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:24;"></span>
+      </span>
+      min
+    </div> 
+    <div class="flex flex-col">
+      <span class="countdown font-mono text-5xl">
+        <span style="--value:18;"></span>
+      </span>
+    sec
+    </div>
+  </div>
+</div>
 </body>
 </html>
